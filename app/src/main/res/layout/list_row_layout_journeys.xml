@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:background="?android:attr/activatedBackgroundIndicator" >
+
+    <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id"
+            android:text=""
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id"
+            android:layout_marginTop="5dip"
+            android:text=""
+            android:textColor="#343434"
+            android:textSize="12sp" />
+
+    <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/distance"
+            android:layout_alignBottom="@+id/distance"
+            android:layout_toRightOf="@+id/distance"
+            android:text=""
+            android:textColor="#343434"
+            android:textSize="12sp" />
+
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="#343434"
+            android:textSize="12sp" />
+</RelativeLayout>

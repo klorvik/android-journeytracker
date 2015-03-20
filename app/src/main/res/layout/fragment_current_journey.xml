@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.RecordJourneyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <com.google.android.gms.maps.MapView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/map" />
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recordJourneyButton" android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" android:src="@drawable/record"
+                android:cropToPadding="false" android:baselineAlignBottom="false" android:focusableInTouchMode="false"
+                android:background="#00ffffff" android:paddingBottom="5dp"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/takePhotoButton"
+                android:src="@drawable/photo_icon" android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+                android:background="#00ffffff" android:padding="10dp"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,81 @@
+
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:foregroundGravity="bottom"
+        android:orientation="vertical" android:background="#ff000000">
+
+     <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+         <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content" android:background="#ffffffff" android:padding="5dp"
+                 android:id="@+id/optionsLayout">
+             <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Select journey:"
+                     android:id="@+id/textView" android:paddingBottom="5dp"/>
+             <LinearLayout
+                     android:orientation="horizontal"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent" android:gravity="center">
+                 <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="All:"
+                         android:id="@+id/textView2"/>
+                 <CheckBox
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/showAllJourneysCheckBox" android:gravity="center"/>
+                 <Spinner
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/spinner" android:layout_weight="0.5"/>
+             </LinearLayout>
+             <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Select slideshow interval"
+                     android:id="@+id/intervalTextView" android:paddingBottom="5dp"/>
+             <SeekBar
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/seekBar" android:layout_weight="0.5"/>
+         </LinearLayout>
+         <FrameLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent" android:id="@+id/slideshowLayout">
+             <ImageView
+             android:id="@+id/slideshowImageVIew"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_marginBottom="8dp"></ImageView>
+             <TextView
+                     android:id="@+id/imageOverlayTextView"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                     android:textColor="#ffffffff"
+                     android:textIsSelectable="true"
+                     android:textSize="20sp" android:gravity="center" android:background="#af6f6f6f" android:padding="10dp"
+                     android:visibility="invisible" android:maxLines="2"/>
+             <ImageButton
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/playImageButton" android:layout_gravity="center" android:src="@drawable/play_button"
+                     android:background="#00ffffff" android:adjustViewBounds="true"/>
+             <ImageButton
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/stopImageButton" android:layout_gravity="center_horizontal|bottom"
+                     android:src="@drawable/stop" android:visibility="gone" android:background="#00ffffff"/>
+         </FrameLayout>
+     </LinearLayout>
+ </FrameLayout>
